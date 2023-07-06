@@ -7,8 +7,8 @@ export function listPost(query) {
     method: 'get',
     params: query,
     headers: {
-      'Content-Type': 'application/json', // 设置请求头为JSON格式
-      'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImE2MzIxZmMyLTA3OWItNGZmMC04YWM3LTcxOTM5ZWQ0OGZiMCJ9.kdzBFqHzKxmZGXMHv9U-_nbnC2y7NDCa9in9IZhxFpgRz3WKZAKmxUDiwVygurqU1fvkaf4lOO09owo_W9BXeA' // 设置Authorization头部，用于身份验证
+      'Content-Type': 'application/json', // 设置请求头为JSON格式earer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImE2MzIxZmMyLTA3OWItNGZmMC04YWM3LT
+      'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImRmZTA4MDZjLTIwMWYtNGU2Ny1iMGJmLTM4NmRmNGQzMjA4MSJ9.g3SEZ_vjk3pV3f-WyfUSQ7t9wngTgRkS1JurSbfmkY7Wak1jodxrVyrU9bmKpdpkfbzswKJdSk9nJ8f9PTtneQ' // 设置Authorization头部，用于身份验证
     }
   })
 }

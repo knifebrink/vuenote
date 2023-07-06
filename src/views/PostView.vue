@@ -90,7 +90,8 @@
       </el-table-column>
       <el-table-column label="创建时间" align="center" prop="createTime" width="180">
         <template #default="scope">
-          <span>{{ parseTime(scope.row.createTime) }}</span>
+<!--          <span>{{ parseTime(scope.row.createTime) }}</span>-->
+          <span>{{ scope.row.createTime }}</span>
         </template>
       </el-table-column>
       <el-table-column label="操作" width="180" align="center" class-name="small-padding fixed-width">
@@ -147,6 +148,7 @@
 <script setup name="Post">
 import { listPost, addPost, delPost, getPost, updatePost } from "@/api/system/post";
 import { getCurrentInstance,ref,reactive ,toRefs} from "vue";
+import { parseTime, resetForm} from '@/utils/ruoyi'
 
 const { proxy } = getCurrentInstance();
 // 空
@@ -205,7 +207,7 @@ function reset() {
     status: "0",
     remark: undefined
   };
-  proxy.resetForm("postRef");
+  resetForm("postRef");
 }
 /** 搜索按钮操作 */
 function handleQuery() {
